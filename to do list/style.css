@@ -1,0 +1,95 @@
+body{
+    height: 100vh;
+    background: linear-gradient(rgb(204, 201, 217),rgb(36, 15, 111));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#add-task-container{
+    width: 320px;
+    background-color: #fff;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    display: flex;
+    box-shadow: 0 0 3px;
+}
+
+input{
+    flex: 5;
+    margin-right: 10px;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+#add-task{
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding : 5px;
+    flex: 1;
+    color: violet;
+    background-color: #fff;
+    transition: 0.2s;
+    border: rgb(235, 87, 235) solid 2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#add-task:hover{
+    background-color: violet;
+    color: #fff;
+}
+
+/* Styling to task which gets added to To-do list */
+
+.task{
+    width: 98%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 3px;
+    padding: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.task li{
+    list-style: none;
+    flex: 6;
+    padding: 5px;
+    font-size: 1.3rem;
+    margin: 5px;
+}
+
+.task button{
+    flex: 1;
+    border-radius: 10px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.task .checkTask{
+    color: orange;
+    margin-right: 4px;
+    border: solid 2px orange;
+    font-size: 1.3rem;
+}
+
+.task .checkTask:hover{
+    color: #fff;
+    background-color: orange;
+}
+
+.task .deleteTask{
+    color: red;
+    margin-right: 4px;
+    border: solid 2px red;
+    font-size: 1.3rem;
+}
+
+.task .deleteTask:hover{
+    color: #fff;
+    background-color: red;
+}
